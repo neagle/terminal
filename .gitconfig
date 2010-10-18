@@ -1,3 +1,17 @@
 [user]
 	name = Nate Eagle
 	email = n.eagle@gmail.com
+
+[color]
+    diff = false
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+
+[core]
+    excludesfile = ~/.gitignore
+    editor = vim 
+    whitespace = fix
+    pager = tig
+    #autocrlf = true
