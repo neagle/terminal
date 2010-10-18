@@ -1,0 +1,31 @@
+export EDITOR="vim"
+export TERM="rxvt"
+export CLICOLOR=1
+export INPUTRC="~/.inputrc"
+if [ "$SYS_BASE" = 'mac' ]; then
+   export TERM=xterm-color
+else
+   export TERM=rxvt
+fi
+export LSCOLORS="ExFxCxDxBxegedabagacad"
+
+export LESS="-erX" # Add color support to less
+
+# make grep pretty
+export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
+# Erase duplicates
+export HISTCONTROL=erasedups
+# resize history size
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+# don't put duplicate lines in the history. See bash(1) for more options
+export HISTCONTROL=ignoredups
+
+# Color for man pages
+export LESS_TERMCAP_mb=$'\E[01;31m'     # blink on = bright red (RED_FG)
+export LESS_TERMCAP_md=$'\E[01;31m'      #
+export LESS_TERMCAP_me=$'\E[0m'         # all attr off = no color
+export LESS_TERMCAP_se=$'\E[0m'         # standout off = no color
+export LESS_TERMCAP_so=$'\E[01;44;33m'  # standout on =
+export LESS_TERMCAP_ue=$'\E[0m'         # underline off = no color
+export LESS_TERMCAP_us=$'\E[01;32m'     # underline on = bright green (GREEN_FG)
