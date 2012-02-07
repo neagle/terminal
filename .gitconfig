@@ -1,9 +1,9 @@
 [user]
 	name = Nate Eagle
-	email = n.eagle@gmail.com
+	email = nate@nateeagle.com
 
 [color]
-    diff = false
+    diff = true
     status = auto
     branch = auto
     interactive = auto
@@ -11,7 +11,10 @@
 
 [core]
     excludesfile = ~/.gitignore
-    editor = vim 
+    editor = vim
     whitespace = fix
-    pager = tig
+    pager = less
     #autocrlf = true
+
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
